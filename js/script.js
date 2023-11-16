@@ -1,3 +1,7 @@
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+});
+
 function downloadFile() {
     const fileName = "Manoj_Kumar_CV.pdf";
 
@@ -30,3 +34,21 @@ function openLink(social) {
     }
     window.open(SOCIAL_URLS[social], "_blank");
 }
+
+// get exp
+function calculateYearsAndMonths() {
+    const givenDate = new Date('2019-06-19');
+    const today = new Date();
+
+    // Calculate the difference in years between the given date and the current date.
+    const years = today.getFullYear() - givenDate.getFullYear();
+
+    // Calculate the difference in months between the given date and the current date, taking into account the years difference.
+    const months = (today.getMonth() - givenDate.getMonth());
+
+    let calculateExperience = `${years} years`
+    if (months > 0) calculateExperience += ` ${months} months`
+    document.getElementById("experience-td").innerText =  calculateExperience;
+}
+
+calculateYearsAndMonths();
