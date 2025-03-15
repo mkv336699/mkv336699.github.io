@@ -37,18 +37,23 @@ function openLink(social) {
 
 // get exp
 function calculateYearsAndMonths() {
-    const givenDate = new Date('2019-06-19');
+    const givenDate = new Date('2019-09-19');
     const today = new Date();
 
     // Calculate the difference in years between the given date and the current date.
-    const years = today.getFullYear() - givenDate.getFullYear();
+    let years = today.getFullYear() - givenDate.getFullYear();
 
     // Calculate the difference in months between the given date and the current date, taking into account the years difference.
     const months = (today.getMonth() - givenDate.getMonth());
 
-    let calculateExperience = `${years} years`
-    if (months > 0) calculateExperience += ` ${months} months`
-    document.getElementById("experience-td").innerText =  calculateExperience;
+    let calculateExperience = ``
+    if (months > 0) calculateExperience += `${years} years ${months} months`
+    else {
+        calculateExperience += `${--years} years ${months * -1} months`
+    }
+
+    for (let element of document.getElementsByClassName("experience-td"))
+        element.innerText = calculateExperience;
 }
 
 calculateYearsAndMonths();
