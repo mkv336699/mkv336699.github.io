@@ -40,17 +40,21 @@ function calculateYearsAndMonths() {
     const givenDate = new Date('2019-09-19');
     const today = new Date();
 
-    // Calculate the difference in years between the given date and the current date.
     let years = today.getFullYear() - givenDate.getFullYear();
+    let months = today.getMonth() - givenDate.getMonth();
+    let days = today.getDate() - givenDate.getDate();
 
-    // Calculate the difference in months between the given date and the current date, taking into account the years difference.
-    const months = (today.getMonth() - givenDate.getMonth());
-
-    let calculateExperience = ``
-    if (months > 0) calculateExperience += `${years} years ${months} months`
-    else {
-        calculateExperience += `${--years} years ${months * -1} months`
+    if (days < 0) {
+        months -= 1;
     }
+    if (months < 0) {
+        years -= 1;
+        months += 12;
+    }
+
+    let yearLabel = years === 1 ? "year" : "years";
+    let monthLabel = months === 1 ? "month" : "months";
+    let calculateExperience = `${years} ${yearLabel} ${months} ${monthLabel}`;
 
     for (let element of document.getElementsByClassName("experience-td"))
         element.innerText = calculateExperience;
