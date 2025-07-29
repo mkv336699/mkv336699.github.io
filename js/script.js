@@ -31,6 +31,7 @@ function openLink(social) {
         leetcode: "https://leetcode.com/mkv336699",
         github: "https://github.com/mkv336699",
         gitlab: "https://gitlab.com/mkv336699",
+        stackoverflow: "https://stackoverflow.com/users/13362998/manoj-kumar",
     }
     window.open(SOCIAL_URLS[social], "_blank");
 }
