@@ -3,7 +3,7 @@ $(function () {
 });
 
 function downloadFile() {
-    const fileName = "Manoj_Kumar_CV.pdf";
+    const fileName = "Manoj_Kumar.pdf";
 
     // Create a Blob object from the file.
     const fileBlob = new Blob([new File([fileName], fileName)], { type: `application/pdf` });
