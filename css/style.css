@@ -86,3 +86,32 @@ table {
 .about {
     height: 100%;
 }
+
+/* Card hover animations */
+.card.shadow.mt-3.cursor-pointer {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.card.shadow.mt-3.cursor-pointer:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-color: #007bff;
+}
+
+/* Optional: Add a subtle scale effect on hover */
+.card.shadow.mt-3.cursor-pointer:hover .card-body {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* Ensure smooth transitions for all card elements */
+.card.shadow.mt-3.cursor-pointer .card-body {
+    transition: transform 0.3s ease;
+}
+
+/* Add a subtle glow effect on hover */
+.card.shadow.mt-3.cursor-pointer:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+}
