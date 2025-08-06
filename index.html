@@ -2,416 +2,408 @@
 <html lang="en">
 
 <head>
-    <title>Manoj Kumar</title>
+    <title>Manoj Kumar - Full Stack Developer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Manoj Kumar - Lead Engineer and Full Stack Developer with expertise in MEAN Stack, Angular, Node.js, and modern web technologies">
+    <meta name="keywords" content="Full Stack Developer, Lead Engineer, Angular, Node.js, MEAN Stack, Web Development">
+    <meta name="author" content="Manoj Kumar">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="./img/portfolio.jpg">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- Intro -->
-    <div class="row spotlight-bg h-100-vh justify-content-center align-items-center">
-        <div class="col-auto text-center">
+    <!-- Hero Section -->
+    <section class="hero-section spotlight-bg h-100-vh d-flex justify-content-center align-items-center">
+        <div class="text-center">
             <h1 class="header-title">
-                <span class="up"> Hello World, </span>
-                <span class="down">I am Manoj </span>
+                <span class="up">Hello World,</span>
+                <span class="down">I am Manoj</span>
             </h1>
             <p class="header-subtitle">FULL STACK DEVELOPER</p>
-            <button class="btn btn-outline-primary mr-3" onclick="downloadFile()"> Download CV </button>
+            <button class="btn btn-outline-primary mr-3" onclick="downloadFile()" aria-label="Download CV">
+                <i class="fa fa-download mr-2"></i>Download CV
+            </button>
             <br>
             <br>
 
-            <!-- Linked In -->
-            <img class="tr-bg mr-3 cursor-pointer" src="./img/social/linkedin.png" width="30" data-toggle="tooltip"
-                title="LinkedIn" onclick="openLink('linkedin')">
+            <!-- Social Links -->
+            <div class="social-links">
+                <img class="social-icon mr-3 cursor-pointer" src="./img/social/linkedin.png" width="30" 
+                    data-toggle="tooltip" title="LinkedIn" onclick="openLink('linkedin')" alt="LinkedIn">
 
-            <!-- LeetCode -->
-            <img class="tr-bg mr-3 cursor-pointer" src="./img/social/leetcode.png" width="30" data-toggle="tooltip"
-                title="LeetCode" onclick="openLink('leetcode')">
+                <img class="social-icon mr-3 cursor-pointer" src="./img/social/leetcode.png" width="30" 
+                    data-toggle="tooltip" title="LeetCode" onclick="openLink('leetcode')" alt="LeetCode">
 
-            <!-- Github-->
-            <img class="tr-bg mr-3 cursor-pointer" src="./img/social/github.png" width="30" data-toggle="tooltip"
-                title="Github" onclick="openLink('github')">
-
-            <!-- Gitlab -->
-            <!-- <img class="tr-bg mr-3 cursor-pointer" src="./img/social/gitlab.png" width="30" data-toggle="tooltip"
-                title="Gitlab" onclick="openLink('gitlab')"> -->
+                <img class="social-icon mr-3 cursor-pointer" src="./img/social/github.png" width="30" 
+                    data-toggle="tooltip" title="Github" onclick="openLink('github')" alt="GitHub">
                 
-            <!-- Stack Overflow -->
-            <img class="tr-bg mr-3 cursor-pointer" src="./img/social/stackoverflow.png" width="30" data-toggle="tooltip"
-                title="Stack Overflow" onclick="openLink('stackoverflow')">
+                <img class="social-icon mr-3 cursor-pointer" src="./img/social/stackoverflow.png" width="30" 
+                    data-toggle="tooltip" title="Stack Overflow" onclick="openLink('stackoverflow')" alt="Stack Overflow">
+            </div>
         </div>
-    </div>
+    </section>
 
-    <!-- About me -->
-    <div class="row about">
-        <div class="col-12">
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="my-pic-container">
-                        <img class="my-pic shadow" src="./img/my_pic.jpg">
+                        <img class="my-pic shadow" src="./img/my_pic.jpg" alt="Manoj Kumar">
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="about-me-content">
-                        <h1 class=""> About me </h1>
-                        <p>
+                        <h2 class="section-title">About me</h2>
+                        <p class="about-description">
                             Innovative and performance-driven Lead Engineer with <span class="experience-td"></span> of experience and a passion for
                             architecting and scaling high-performance web applications using the MEAN Stack. Adept at
                             leading cross-functional teams, optimizing system performance, and implementing modern
                             development best practices. With a strong foundation in web development, I have successfully led
                             and contributed to projects that enhance operational efficiency, reduce downtime, and improve
-                            system scalability
+                            system scalability.
                         </p>
 
-                        <table>
-                            <tr>
-                                <th> Name: </th>
-                                <td> Manoj Kumar </td>
-                            </tr>
-                            <tr>
-                                <th> Date of birth: </th>
-                                <td> 9th December 1998 </td>
-                            </tr>
-                            <tr>
-                                <th> Address: </th>
-                                <td> Mumbai </td>
-                            </tr>
-                            <tr>
-                                <th> Email: </th>
-                                <td> mkv336699@gmail.com </td>
-                            </tr>
-                            <!-- <tr>
-                                <th> Phone: </th>
-                                <td> +91 9673512733 </td>
-                            </tr> -->
-                            <tr>
-                                <th> Experience: </th>
-                                <td class="experience-td"> </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Skills -->
-    <!-- <div style="background-color: antiquewhite;" class="row h-100-vh justify-content-center align-items-center">
-        <div class="col-auto">
-            <h1> Skills </h1>
-        </div>
-    </div> -->
-
-    
-    <div class="row about">
-        <div class="col-12">
-            <div class="container">
-                <h1 class="text-center mb-5">Experience</h1>
-                <div class="timeline-container">
-                    <!-- Timeline Item 1 -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h4 class="company-name">Zycus Infotech</h4>
-                                <span class="location">Mumbai, Maharashtra, India</span>
+                        <div class="personal-info">
+                            <div class="info-item">
+                                <strong>Name:</strong>
+                                <span>Manoj Kumar</span>
                             </div>
-                            <h5 class="job-title">Lead Engineer</h5>
-                            <div class="timeline-date">07/'23 - Present</div>
-                            <p class="timeline-description">
-                                Led the development of iContract, a contract management system designed to reduce maverick spend and streamline operations. Optimized 10+ core system components to boost performance and maintainability. Managed a team of 5+ developers, mentoring interns and junior engineers, while driving code quality through reviews and best practices. Spearheaded technical discussions and R&D initiatives, fostering innovation and improving development efficiency by 20%.    
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Timeline Item 2 -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h4 class="company-name">Synergy Technology Services</h4>
-                                <span class="location">Mumbai, Maharashtra, India</span>
+                            <div class="info-item">
+                                <strong>Date of birth:</strong>
+                                <span>9th December 1998</span>
                             </div>
-                            <h5 class="job-title">Software Engineer</h5>
-                            <div class="timeline-date">06/'22 - 07/'23</div>
-                            <p class="timeline-description">
-                                At STS, I actively advanced my skills in backend development and database management to drive project optimization. Worked on Shazpha, migrating 100K+ lines of legacy code to modern Angular and Node.js, boosting performance and security. At Shipyaari, led backend optimizations reducing API response times by 40% and refactored the Angular frontend to follow industry best practices.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Timeline Item 3 -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h4 class="company-name">Faclon Labs</h4>
-                                <span class="location">Mumbai, Maharashtra, India</span>
+                            <div class="info-item">
+                                <strong>Address:</strong>
+                                <span>Mumbai</span>
                             </div>
-                            <h5 class="job-title">Software Engineer</h5>
-                            <div class="timeline-date">09/'19 - 05/'22</div>
-                            <p class="timeline-description">
-                                After my graduation, I joined Faclon Labs as a Software Engineer, I effectively harness HTML, CSS, and JavaScript to create and manage web applications for diverse clients. Collaborated with cross-functional teams to deliver high-quality, responsive web solutions. Developed and maintained interactive IoT data visualization platforms with user and admin portals, enabling real-time monitoring, analytics, and operational insights.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Timeline Item 4 -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h4 class="company-name">Vardaan Nursing - AllureMedSpa</h4>
-                                <span class="location">Mumbai, Maharashtra, India</span>
+                            <div class="info-item">
+                                <strong>Email:</strong>
+                                <span>mkv336699@gmail.com</span>
                             </div>
-                            <h5 class="job-title">MEAN Stack Intern</h5>
-                            <div class="timeline-date">07/'18 - 09/'18</div>
-                            <p class="timeline-description">
-                                I was a MEAN Stack Intern at Vardaan Nursing - AllureMedSpa, where I gained hands-on experience in building web applications using MongoDB, Express.js, Angular, and Node.js.
-                            </p>
+                            <div class="info-item">
+                                <strong>Experience:</strong>
+                                <span class="experience-td"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Projects -->
-    <div class="row justify-content-center">
-        <div class="col-12 mt-4">
-            <h1 class="text-center"> Projects </h1>
-            <div class="row p-4">
+    <!-- Experience Section -->
+    <section class="experience-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Experience</h2>
+            <div class="timeline-container">
+                <!-- Timeline Item 1 -->
+                <article class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-content">
+                        <header class="timeline-header">
+                            <h3 class="company-name">Zycus Infotech</h3>
+                            <span class="location">Mumbai, Maharashtra, India</span>
+                        </header>
+                        <h4 class="job-title">Lead Engineer</h4>
+                        <time class="timeline-date">07/'23 - Present</time>
+                        <p class="timeline-description">
+                            Led the development of iContract, a contract management system designed to reduce maverick spend and streamline operations. Optimized 10+ core system components to boost performance and maintainability. Managed a team of 5+ developers, mentoring interns and junior engineers, while driving code quality through reviews and best practices. Spearheaded technical discussions and R&D initiatives, fostering innovation and improving development efficiency by 20%.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Timeline Item 2 -->
+                <article class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-content">
+                        <header class="timeline-header">
+                            <h3 class="company-name">Synergy Technology Services</h3>
+                            <span class="location">Mumbai, Maharashtra, India</span>
+                        </header>
+                        <h4 class="job-title">Software Engineer</h4>
+                        <time class="timeline-date">06/'22 - 07/'23</time>
+                        <p class="timeline-description">
+                            At STS, I actively advanced my skills in backend development and database management to drive project optimization. Worked on Shazpha, migrating 100K+ lines of legacy code to modern Angular and Node.js, boosting performance and security. At Shipyaari, led backend optimizations reducing API response times by 40% and refactored the Angular frontend to follow industry best practices.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Timeline Item 3 -->
+                <article class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-content">
+                        <header class="timeline-header">
+                            <h3 class="company-name">Faclon Labs</h3>
+                            <span class="location">Mumbai, Maharashtra, India</span>
+                        </header>
+                        <h4 class="job-title">Software Engineer</h4>
+                        <time class="timeline-date">09/'19 - 05/'22</time>
+                        <p class="timeline-description">
+                            After my graduation, I joined Faclon Labs as a Software Engineer, I effectively harness HTML, CSS, and JavaScript to create and manage web applications for diverse clients. Collaborated with cross-functional teams to deliver high-quality, responsive web solutions. Developed and maintained interactive IoT data visualization platforms with user and admin portals, enabling real-time monitoring, analytics, and operational insights.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Timeline Item 4 -->
+                <article class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
+                    <div class="timeline-content">
+                        <header class="timeline-header">
+                            <h3 class="company-name">Vardaan Nursing - AllureMedSpa</h3>
+                            <span class="location">Mumbai, Maharashtra, India</span>
+                        </header>
+                        <h4 class="job-title">MEAN Stack Intern</h4>
+                        <time class="timeline-date">07/'18 - 09/'18</time>
+                        <p class="timeline-description">
+                            I was a MEAN Stack Intern at Vardaan Nursing - AllureMedSpa, where I gained hands-on experience in building web applications using MongoDB, Express.js, Angular, and Node.js.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <h2 class="section-title text-center">Projects</h2>
+            <div class="row">
                 <!-- IContract -->
                 <div class="col-12 col-md-6">
-                    <div class="card shadow mt-3 cursor-pointer">
+                    <article class="project-card card shadow mt-3 cursor-pointer">
                         <div class="card-body">
-                            <h5 class="card-title">IContract</h5>
-                            <h6 class="card-subtitle mb-2 text-muted"> Contract Management System</h6>
-                            <p class="card-text">
-                            <ul>
-                                <li>
-                                    Customers can Create, Update, Manage and Collaborate on Contracts. Draft with
-                                    user-friendly templates, clause libraries & external template support.
-                                </li>
-                                <li>
-                                    Built new components and improved existing ones in the system along with providing
-                                    enhancements to existing back-end services, and collaborated with UI/UX designers
-                                    to ensure a seamless user experience.
-                                </li>
-                            </ul>
-                            </p>
-                            <!-- <span class="badge bg-primary">Primary</span> -->
-                            <span class="badge bg-primary">Angular</span>
-                            <span class="badge bg-primary">Node JS</span>
-                            <span class="badge bg-primary">SQL</span>
-                            <span class="badge bg-primary">GIT</span>
-                            <!-- <span class="btn btn-primary btn-sm"><b>Primary</b></span> -->
+                            <h3 class="card-title">IContract</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">Contract Management System</h4>
+                            <div class="card-text">
+                                <ul>
+                                    <li>
+                                        Customers can Create, Update, Manage and Collaborate on Contracts. Draft with
+                                        user-friendly templates, clause libraries & external template support.
+                                    </li>
+                                    <li>
+                                        Built new components and improved existing ones in the system along with providing
+                                        enhancements to existing back-end services, and collaborated with UI/UX designers
+                                        to ensure a seamless user experience.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="badge bg-primary">Angular</span>
+                                <span class="badge bg-primary">Node JS</span>
+                                <span class="badge bg-primary">SQL</span>
+                                <span class="badge bg-primary">GIT</span>
+                            </div>
                         </div>
-                    </div>
-
+                    </article>
                 </div>
 
                 <!-- Shipyaari -->
                 <div class="col-12 col-md-6">
-                    <div class="card shadow mt-3 cursor-pointer">
+                    <article class="project-card card shadow mt-3 cursor-pointer">
                         <div class="card-body">
-                            <h5 class="card-title">Shipyaari</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Logistics Application</h6>
-                            <p class="card-text">
-                            <ul>
-                                <li>
-                                    A logistics application where users can create shipments like B2C, B2B,
-                                    International, etc with availability of various courier partners.
-                                </li>
-                                <li>
-                                    Managed continuous enhancements and updates for the frontend, including backend
-                                    maintenance involving the development of REST APIs, debugging issues, and
-                                    providing support or hotfixes.
-                                </li>
-                            </ul>
-                            </p>
-                            <span class="badge bg-primary">Angular</span>
-                            <span class="badge bg-primary">Node JS</span>
-                            <span class="badge bg-primary">SQL</span>
-                            <span class="badge bg-primary">Jenkins</span>
-                            <span class="badge bg-primary">GIT</span>
+                            <h3 class="card-title">Shipyaari</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">Logistics Application</h4>
+                            <div class="card-text">
+                                <ul>
+                                    <li>
+                                        A logistics application where users can create shipments like B2C, B2B,
+                                        International, etc with availability of various courier partners.
+                                    </li>
+                                    <li>
+                                        Managed continuous enhancements and updates for the frontend, including backend
+                                        maintenance involving the development of REST APIs, debugging issues, and
+                                        providing support or hotfixes.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="badge bg-primary">Angular</span>
+                                <span class="badge bg-primary">Node JS</span>
+                                <span class="badge bg-primary">SQL</span>
+                                <span class="badge bg-primary">Jenkins</span>
+                                <span class="badge bg-primary">GIT</span>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
 
                 <!-- Shazpha -->
                 <div class="col-12 col-md-6">
-                    <div class="card shadow mt-3 cursor-pointer">
+                    <article class="project-card card shadow mt-3 cursor-pointer">
                         <div class="card-body">
-                            <h5 class="card-title">Shazpha</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Stock market curation and Insights app</h6>
-                            <p class="card-text">
-                            <ul>
-                                <li>
-                                    Provides an AI based rating and curation platform for stocks, futures and
-                                    commodities on IOS, Android & Web platforms
-                                </li>
-                                <li>
-                                    Various graphical representations involving Candle, Line, Bar charts and Venn
-                                    pie diagrams. Upgrading from Angular v4 to v13, Jenkins for automation, deployment
-                                    in
-                                    Apache Tomcat server.
-                                </li>
-                            </ul>
-                            </p>
-                            <span class="badge bg-primary">Angular</span>
-                            <span class="badge bg-primary">Jenkins</span>
-                            <span class="badge bg-primary">Apache</span>
-                            <span class="badge bg-primary">GIT</span>
+                            <h3 class="card-title">Shazpha</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">Stock market curation and Insights app</h4>
+                            <div class="card-text">
+                                <ul>
+                                    <li>
+                                        Provides an AI based rating and curation platform for stocks, futures and
+                                        commodities on IOS, Android & Web platforms
+                                    </li>
+                                    <li>
+                                        Various graphical representations involving Candle, Line, Bar charts and Venn
+                                        pie diagrams. Upgrading from Angular v4 to v13, Jenkins for automation, deployment
+                                        in Apache Tomcat server.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="badge bg-primary">Angular</span>
+                                <span class="badge bg-primary">Jenkins</span>
+                                <span class="badge bg-primary">Apache</span>
+                                <span class="badge bg-primary">GIT</span>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
 
                 <!-- IOSense -->
                 <div class="col-12 col-md-6">
-                    <div class="card shadow mt-3 cursor-pointer">
+                    <article class="project-card card shadow mt-3 cursor-pointer">
                         <div class="card-body">
-                            <h5 class="card-title">IOSense</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">IOT Data Visualization and Analytical Platform
-                            </h6>
-                            <p class="card-text">
-                            <ul>
-                                <li>
-                                    A project primarily built for users to Visualize, Monitor and Control Assets and
-                                    Resources
-                                </li>
-                                <li>
-                                    Worked and maintained both Admin Panel and User Panel.
-                                    Some of the modules included Real Time Dashboards, Custom Dashboard, All kinds
-                                    of Graphs, Real Time Location Tracking and Monitoring Systems, Notification and
-                                    Alerting Systems, etc
-                                </li>
-                            </ul>
-                            </p>
-                            <span class="badge bg-primary">Angular</span>
-                            <span class="badge bg-primary">Node JS</span>
-                            <span class="badge bg-primary">MongoDB</span>
-                            <span class="badge bg-primary">Jenkins</span>
-                            <span class="badge bg-primary">GIT</span>
+                            <h3 class="card-title">IOSense</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">IOT Data Visualization and Analytical Platform</h4>
+                            <div class="card-text">
+                                <ul>
+                                    <li>
+                                        A project primarily built for users to Visualize, Monitor and Control Assets and
+                                        Resources
+                                    </li>
+                                    <li>
+                                        Worked and maintained both Admin Panel and User Panel.
+                                        Some of the modules included Real Time Dashboards, Custom Dashboard, All kinds
+                                        of Graphs, Real Time Location Tracking and Monitoring Systems, Notification and
+                                        Alerting Systems, etc
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="badge bg-primary">Angular</span>
+                                <span class="badge bg-primary">Node JS</span>
+                                <span class="badge bg-primary">MongoDB</span>
+                                <span class="badge bg-primary">Jenkins</span>
+                                <span class="badge bg-primary">GIT</span>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
 
                 <!-- Outage Management -->
                 <div class="col-12 col-md-6">
-                    <div class="card shadow mt-3 cursor-pointer">
+                    <article class="project-card card shadow mt-3 cursor-pointer">
                         <div class="card-body">
-                            <h5 class="card-title">Outage Management</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Feeder and RCDS Management System</h6>
-                            <p class="card-text">
-                            <ul>
-                                <li>
-                                    Used to control the entire Power / Electricity Management of North India.
-                                    Built for Excel Source private limited who then provided the solution to some of the
-                                    big energy managers in India like Adani, Mahadiscom etc
-                                </li>
-                                <li>
-                                    Worked and maintained both Admin Panel and User Panel.
-                                    Modules included like Feeder, Rcds, Substation Mapping System, Automatic
-                                    algorithm to run and detect faults in Feeders and Rcds, Reports, etc
-                                </li>
-                            </ul>
-                            </p>
-                            <span class="badge bg-primary">Angular</span>
-                            <span class="badge bg-primary">Node JS</span>
-                            <span class="badge bg-primary">MongoDB</span>
-                            <span class="badge bg-primary">Jenkins</span>
-                            <span class="badge bg-primary">GIT</span>
-                            <span class="badge bg-primary">AWS</span>
+                            <h3 class="card-title">Outage Management</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">Feeder and RCDS Management System</h4>
+                            <div class="card-text">
+                                <ul>
+                                    <li>
+                                        Used to control the entire Power / Electricity Management of North India.
+                                        Built for Excel Source private limited who then provided the solution to some of the
+                                        big energy managers in India like Adani, Mahadiscom etc
+                                    </li>
+                                    <li>
+                                        Worked and maintained both Admin Panel and User Panel.
+                                        Modules included like Feeder, Rcds, Substation Mapping System, Automatic
+                                        algorithm to run and detect faults in Feeders and Rcds, Reports, etc
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="badge bg-primary">Angular</span>
+                                <span class="badge bg-primary">Node JS</span>
+                                <span class="badge bg-primary">MongoDB</span>
+                                <span class="badge bg-primary">Jenkins</span>
+                                <span class="badge bg-primary">GIT</span>
+                                <span class="badge bg-primary">AWS</span>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
 
                 <!-- Wheel Shelling Prediction System -->
                 <div class="col-12 col-md-6">
-                    <div class="card shadow mt-3 cursor-pointer">
+                    <article class="project-card card shadow mt-3 cursor-pointer">
                         <div class="card-body">
-                            <h5 class="card-title">Wheel Shelling Prediction System</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">A project for Konkan Railway</h6>
-                            <p class="card-text">
-                            <ul>
-                                <li>
-                                    Monitor Real Time Temperature of Train Wheels and detect the Shelling of a wheel to
-                                    improve the maintenance time and efforts
-                                </li>
-                                <li>
-                                    Modules included like Real Time Temperature and Location Monitoring Systems,
-                                    Alerting System to notify abnormal wheel temperatures, Reports on a scheduled
-                                    basis.
-                                </li>
-                            </ul>
-                            </p>
-                            <span class="badge bg-primary">Angular</span>
-                            <span class="badge bg-primary">Node JS</span>
-                            <span class="badge bg-primary">MongoDB</span>
-                            <span class="badge bg-primary">Jenkins</span>
-                            <span class="badge bg-primary">GIT</span>
-                            <span class="badge bg-primary">AWS</span>
+                            <h3 class="card-title">Wheel Shelling Prediction System</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">A project for Konkan Railway</h4>
+                            <div class="card-text">
+                                <ul>
+                                    <li>
+                                        Monitor Real Time Temperature of Train Wheels and detect the Shelling of a wheel to
+                                        improve the maintenance time and efforts
+                                    </li>
+                                    <li>
+                                        Modules included like Real Time Temperature and Location Monitoring Systems,
+                                        Alerting System to notify abnormal wheel temperatures, Reports on a scheduled
+                                        basis.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="badge bg-primary">Angular</span>
+                                <span class="badge bg-primary">Node JS</span>
+                                <span class="badge bg-primary">MongoDB</span>
+                                <span class="badge bg-primary">Jenkins</span>
+                                <span class="badge bg-primary">GIT</span>
+                                <span class="badge bg-primary">AWS</span>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
 
                 <!-- Demand Control System -->
                 <div class="col-12 col-md-6">
-                    <div class="card shadow mt-3 cursor-pointer">
+                    <article class="project-card card shadow mt-3 cursor-pointer">
                         <div class="card-body">
-                            <h5 class="card-title">Demand Control System</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Traffic calculator application</h6>
-                            <p class="card-text">
-                            <ul>
-                                <li>
-                                    A tool to predict the energy consumption and calculate future billing based in
-                                    tariffs
-                                </li>
-                                <li>
-                                    Modules included like Custom Tariff and Billing Unit Configurator, Prediction Report
-                                    of the Billing Unit, Real Time Monitoring of the Billing Unit, Alerting and
-                                    Notification System
-                                </li>
-                            </ul>
-                            </p>
-                            <span class="badge bg-primary">Angular</span>
-                            <span class="badge bg-primary">Node JS</span>
-                            <span class="badge bg-primary">MongoDB</span>
-                            <span class="badge bg-primary">Jenkins</span>
-                            <span class="badge bg-primary">GIT</span>
-                            <span class="badge bg-primary">AWS</span>
+                            <h3 class="card-title">Demand Control System</h3>
+                            <h4 class="card-subtitle mb-2 text-muted">Traffic calculator application</h4>
+                            <div class="card-text">
+                                <ul>
+                                    <li>
+                                        A tool to predict the energy consumption and calculate future billing based in
+                                        tariffs
+                                    </li>
+                                    <li>
+                                        Modules included like Custom Tariff and Billing Unit Configurator, Prediction Report
+                                        of the Billing Unit, Real Time Monitoring of the Billing Unit, Alerting and
+                                        Notification System
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="badge bg-primary">Angular</span>
+                                <span class="badge bg-primary">Node JS</span>
+                                <span class="badge bg-primary">MongoDB</span>
+                                <span class="badge bg-primary">Jenkins</span>
+                                <span class="badge bg-primary">GIT</span>
+                                <span class="badge bg-primary">AWS</span>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    </section>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
-<script src="./js/script.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
 
 </html>

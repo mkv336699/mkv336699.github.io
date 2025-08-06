@@ -1,19 +1,26 @@
+/* ===== RESET & BASE STYLES ===== */
 html,
 body {
     margin: 0;
     overflow-x: hidden;
     font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
-.spotlight-bg {
+/* ===== HERO SECTION ===== */
+.hero-section {
     background-image: url("../img/header.jpg");
     background-size: cover;
     background-position: top;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 @media only screen and (max-width: 768px) {
-    .spotlight-bg {
+    .hero-section {
         background-position: center;
+        background-attachment: scroll;
     }
 }
 
@@ -23,23 +30,24 @@ body {
 
 .header-title {
     font-family: 'Baloo Paaji', cursive !important;
+    margin-bottom: 1rem;
+}
 
-    .up {
-        font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
-        font-weight: 500;
-        color: #444;
-        margin-bottom: 5px;
-        position: relative;
-        display: block;
-    }
+.header-title .up {
+    font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 5px;
+    position: relative;
+    display: block;
+}
 
-    .down {
-        font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
-        margin-bottom: 0;
-        position: relative;
-        display: block;
-        font-weight: bolder;
-    }
+.header-title .down {
+    font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
+    margin-bottom: 0;
+    position: relative;
+    display: block;
+    font-weight: bolder;
 }
 
 .header-subtitle {
@@ -48,24 +56,71 @@ body {
     opacity: .8;
     margin-top: -10px;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
+/* ===== SOCIAL LINKS ===== */
+.social-links {
+    margin-top: 2rem;
+}
+
+.social-icon {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* ===== UTILITY CLASSES ===== */
 .cursor-pointer {
     cursor: pointer;
+}
+
+.mr-3 {
+    margin-right: 3%;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.about-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #555;
 }
 
 .my-pic-container {
     height: 100%;
     width: 100%;
     padding: 10%;
-    /* background-color:azure; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-me-content {
     padding: 10%;
     height: 100%;
     width: 100%;
-    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .my-pic {
@@ -73,50 +128,52 @@ body {
     width: 100%;
     border: 0px solid black;
     border-radius: 7%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-.mr-3 {
-    margin-right: 3%;
-}
-
-table {
-    width: 100%;
-}
-
-.about {
-    height: 100%;
-}
-
-/* Card hover animations */
-.card.shadow.mt-3.cursor-pointer {
-    transition: all 0.3s ease;
-    transform: translateY(0);
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-}
-
-.card.shadow.mt-3.cursor-pointer:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-    border-color: #007bff;
-}
-
-/* Optional: Add a subtle scale effect on hover */
-.card.shadow.mt-3.cursor-pointer:hover .card-body {
+.my-pic:hover {
     transform: scale(1.02);
-    transition: transform 0.3s ease;
 }
 
-/* Ensure smooth transitions for all card elements */
-.card.shadow.mt-3.cursor-pointer .card-body {
-    transition: transform 0.3s ease;
+/* ===== PERSONAL INFO ===== */
+.personal-info {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Add a subtle glow effect on hover */
-.card.shadow.mt-3.cursor-pointer:hover {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
 }
 
-/* Timeline Styles */
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-item strong {
+    color: #333;
+    font-weight: 600;
+    min-width: 120px;
+}
+
+.info-item span {
+    color: #666;
+    text-align: right;
+}
+
+/* ===== EXPERIENCE SECTION ===== */
+.experience-section {
+    padding: 4rem 0;
+    background: white;
+}
+
+/* ===== TIMELINE STYLES ===== */
 .timeline-container {
     position: relative;
     max-width: 800px;
@@ -131,7 +188,7 @@ table {
     top: 0;
     bottom: 0;
     width: 2px;
-    background: #ddd;
+    background: linear-gradient(to bottom, #007bff, #ddd);
 }
 
 .timeline-item {
@@ -146,26 +203,37 @@ table {
     top: 10px;
     width: 20px;
     height: 20px;
-    background: #333;
+    background: #007bff;
     border-radius: 50%;
     border: 4px solid #fff;
     box-shadow: 0 0 0 3px #ddd;
     z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover .timeline-marker {
+    transform: scale(1.2);
 }
 
 .timeline-content {
     background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
 .timeline-content::before {
     content: '';
     position: absolute;
     left: -10px;
-    top: 20px;
+    top: 25px;
     width: 0;
     height: 0;
     border-top: 10px solid transparent;
@@ -174,50 +242,129 @@ table {
 }
 
 .timeline-header {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .company-name {
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 700;
     color: #333;
     margin: 0;
     text-decoration: underline;
+    text-decoration-color: #007bff;
+    text-underline-offset: 3px;
 }
 
 .location {
     color: #666;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     margin-left: 10px;
+    font-weight: 500;
 }
 
 .location::before {
     content: '•';
     margin-right: 8px;
-    color: #333;
+    color: #007bff;
 }
 
 .job-title {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #007bff;
-    margin: 8px 0 5px 0;
+    margin: 10px 0 8px 0;
 }
 
 .timeline-date {
     color: #888;
     font-size: 0.9rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: 500;
 }
 
 .timeline-description {
     color: #555;
-    line-height: 1.6;
+    line-height: 1.7;
     margin: 0;
+    font-size: 1rem;
 }
 
-/* Responsive adjustments */
+/* ===== PROJECTS SECTION ===== */
+.projects-section {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+/* ===== CARD HOVER ANIMATIONS ===== */
+.project-card.card.shadow.mt-3.cursor-pointer {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.project-card.card.shadow.mt-3.cursor-pointer:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+    border-color: #007bff;
+}
+
+.project-card.card.shadow.mt-3.cursor-pointer:hover .card-body {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+.project-card.card.shadow.mt-3.cursor-pointer .card-body {
+    transition: transform 0.3s ease;
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.card-text {
+    margin: 1rem 0;
+}
+
+.card-text ul {
+    padding-left: 1.2rem;
+}
+
+.card-text li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.tech-stack {
+    margin-top: 1rem;
+}
+
+.tech-stack .badge {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
     .timeline-container::before {
         left: 20px;
     }
@@ -233,7 +380,7 @@ table {
     }
     
     .timeline-content {
-        padding: 15px;
+        padding: 20px;
     }
     
     .company-name {
@@ -242,5 +389,50 @@ table {
     
     .job-title {
         font-size: 1rem;
+    }
+    
+    .personal-info {
+        margin-top: 2rem;
+    }
+    
+    .info-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .info-item span {
+        text-align: left;
+    }
+    
+    .about-me-content {
+        padding: 5%;
+    }
+    
+    .my-pic-container {
+        padding: 5%;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-title .up,
+    .header-title .down {
+        font-size: 2rem;
+    }
+    
+    .header-subtitle {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .timeline-content {
+        padding: 15px;
+    }
+    
+    .card-body {
+        padding: 1rem;
     }
 }
