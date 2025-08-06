@@ -10,33 +10,77 @@ $(function () {
 // ===== FILE DOWNLOAD FUNCTION =====
 function downloadFile() {
     try {
-        const fileName = "Manoj_Kumar.pdf";
+        const fileName = "Manoj_Kumar_CV.pdf";
         
-        // Create a Blob object from the file
-        const fileBlob = new Blob([new File([fileName], fileName)], { 
-            type: 'application/pdf' 
-        });
-
-        // Create a URL object from the Blob object
-        const url = URL.createObjectURL(fileBlob);
-
-        // Create a new anchor element and set its href attribute to the URL object
+        // Use the existing PDF file in the root directory
+        const cvUrl = "./Manoj_Kumar.pdf";
+        
+        // Create a temporary anchor element
         const anchorElement = document.createElement("a");
-        anchorElement.href = url;
+        anchorElement.href = cvUrl;
         anchorElement.download = fileName;
-
-        // Click the anchor element to download the file
-        anchorElement.click();
-
-        // Revoke the object URL to avoid memory leaks
-        URL.revokeObjectURL(url);
+        anchorElement.target = "_blank";
         
-        // Show success feedback (optional)
+        // Add to DOM temporarily
+        document.body.appendChild(anchorElement);
+        
+        // Trigger download
+        anchorElement.click();
+        
+        // Clean up
+        document.body.removeChild(anchorElement);
+        
+        // Show success feedback
         console.log('CV download initiated');
+        
+        // Optional: Show a success message to user
+        showNotification('CV download started!', 'success');
+        
     } catch (error) {
         console.error('Error downloading file:', error);
-        alert('Sorry, there was an error downloading the CV. Please try again.');
+        
+        // Fallback: Open in new tab or show message
+        showNotification('CV file not found. Please contact me directly for my CV.', 'info');
+        
+        // Alternative: Open email client
+        const emailSubject = encodeURIComponent('Request for CV - Manoj Kumar');
+        const emailBody = encodeURIComponent('Hi Manoj,\n\nI would like to request your CV for a potential opportunity.\n\nBest regards,');
+        const mailtoLink = `mailto:mkv336699@gmail.com?subject=${emailSubject}&body=${emailBody}`;
+        
+        // Show option to email
+        if (confirm('CV file not available for download. Would you like to email me to request my CV?')) {
+            window.open(mailtoLink, '_blank');
+        }
     }
+}
+
+// ===== NOTIFICATION FUNCTION =====
+function showNotification(message, type = 'info') {
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
+    notification.style.cssText = `
+        top: 20px;
+        right: 20px;
+        z-index: 9999;
+        max-width: 300px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    `;
+    
+    notification.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    `;
+    
+    // Add to page
+    document.body.appendChild(notification);
+    
+    // Auto remove after 5 seconds
+    setTimeout(() => {
+        if (notification.parentNode) {
+            notification.parentNode.removeChild(notification);
+        }
+    }, 5000);
 }
 
 // ===== SOCIAL LINKS FUNCTION =====
