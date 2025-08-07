@@ -29,7 +29,7 @@ body {
 }
 
 .header-title {
-    font-family: 'Baloo Paaji', cursive !important;
+    font-family: 'Baloo Paaji 2', 'Baloo Paaji', 'Poppins', sans-serif;
     margin-bottom: 1rem;
 }
 
@@ -415,6 +415,10 @@ body {
 }
 
 @media (max-width: 576px) {
+    .header-title {
+        font-family: 'Baloo Paaji 2', 'Poppins', sans-serif;
+    }
+    
     .header-title .up,
     .header-title .down {
         font-size: 2rem;
