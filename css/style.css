@@ -67,7 +67,7 @@ body {
 
 .social-icon {
     transition: transform 0.3s ease, opacity 0.3s ease;
-    border-radius: 50%;
+    border-radius: 15%;
     padding: 5px;
 }
 
