@@ -69,11 +69,51 @@ body {
     transition: transform 0.3s ease, opacity 0.3s ease;
     border-radius: 15%;
     padding: 5px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.social-icon:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.social-icon:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.social-icon:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.social-icon:nth-child(4) {
+    animation-delay: 1.5s;
 }
 
 .social-icon:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
+    transform: scale(1.2) rotate(5deg);
+    opacity: 0.9;
+    animation-play-state: paused;
+}
+
+/* Floating animation for social icons */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Pulse glow effect on hover */
+.social-icon:hover {
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
+    filter: brightness(1.1);
+}
+
+/* Bounce effect when clicked */
+.social-icon:active {
+    transform: scale(0.9);
+    transition: transform 0.1s ease;
 }
 
 /* ===== UTILITY CLASSES ===== */
