@@ -89,8 +89,6 @@ body {
 }
 
 .social-icon:hover {
-    transform: scale(1.2) rotate(5deg);
-    opacity: 0.9;
     animation-play-state: paused;
 }
 
@@ -106,7 +104,6 @@ body {
 
 /* Pulse glow effect on hover */
 .social-icon:hover {
-    box-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
     filter: brightness(1.1);
 }
 
