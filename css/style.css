@@ -447,7 +447,6 @@ body {
     left: 0;
     right: 0;
     height: 30px;
-    background: linear-gradient(transparent, #f8f9fa);
     pointer-events: none;
 }
 
